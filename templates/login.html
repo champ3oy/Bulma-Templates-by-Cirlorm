@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css" />
+
+
+    <style>
+        .body {
+            background-image: url('https://i.ibb.co/6W0J9xW/china.jpg');
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0;
+            overflow: hidden;
+        }
+        .bg {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            background-position: center center;
+            position: absolute;
+            top: 0px;
+            left: 0;
+        }
+        .login-modal {
+            width: 500px;
+            height: 500px;
+            background-color: rgba(255, 255, 255, 0.2);
+            z-index: 10;
+            position: absolute;
+            text-align: center;
+            left: 30%;
+            top: 10%;
+            position: fixed;
+            overflow: hidden;
+            border-radius: 20px;
+            backdrop-filter: blur(5px);
+        }
+        .portrait {
+            width: 150px;
+            height: 150px;
+            border-radius: 100px;
+            margin-top: 50px;
+        }
+        
+        #lgin {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 25px;
+            border: 10px;
+            color: whitesmoke;
+        }
+        #txt {
+            margin-top: 20px;
+            width: 250px;
+            color: whitesmoke;
+        }
+        .fp {
+            padding: 10px;
+        }
+        a {
+            color: white;
+        }
+        span {
+            color: cyan;
+        }
+        #txtt {
+            border-bottom-width: 10px;
+            border-left-width: none;
+            border-right-width: none;
+            border-top-width: none;
+        }
+        #cam {
+            margin-top: 100px;
+            font-size: 35px;
+            color: rgba(240, 248, 255, 0.336);
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+            <div class="bg">
+                    <div class="login-modal">
+                        <div class="img-r">
+                            <img src="https://i.ibb.co/fS9f4Mb/portrait.jpg" class="portrait">
+                            <span id="cam" class="is-overlay"><i class="fa fa-camera"></i></span>
+                        </div>
+                        
+                        <div class="">
+                            <div class="has-icons-left">
+                                    <input id="txt" class="input is-primary" type="text" placeholder="Username..." style="background-color: rgba(211, 211, 211, 0.158);">
+                            </div>
+                            <div>
+                                    <input id="txt" class="input is-primary" type="password" placeholder="Password..." style="background-color: rgba(211, 211, 211, 0.158);">
+                            </div>
+                            <div>
+                                    <div id="lgin" class="button is-primary is-large is-focused is-rounded" type="text">LOGIN</div>
+                            </div>
+                            <div class="fp">
+                                <a href="">Forgot Password?</a>
+                            </div>
+                            <div class="fp">
+                                    <span>New here? </span><a href="">Create Account</a>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+            </div>
+    </div>
+</body>
+</html>
