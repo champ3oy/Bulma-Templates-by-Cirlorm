@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Video Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css" />
+    <style>
+        @media screen and (max-width: 800px) {
+            #sidebar {
+                display: none;
+            }
+            .desktop {
+                display: none;
+            }
+        }
+        #sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: lightgrey;
+            position: fixed;
+        }
+        .play {s
+            font-size: 40px;
+            margin-left: 80px;
+            margin-top: 50px;
+            color: lightcoral;
+        }
+        .box {
+            box-shadow: 0px 0px 5px 5px rgba(148, 143, 143, 0.2);
+        }
+        #txt {
+            text-align: left;
+            margin-top: 20px;
+            padding: 10px;
+            color: lightcoral;
+        }
+        #sec-footer {
+            margin-left: -10px;
+            margin-top: 80px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <p class="title is-4 has-text-danger">VideoBlog</p>
+                <div class="dropdown is-right navbar-burger is-hoverable" aria-label="menu">
+                    <div class="dropdown-trigger">
+                            <a role="button" class="navbar-burger" aria-label="menu" aria-haspopup="true" aria-controls="dropdown-menu">
+                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                            </a>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-item is-active">Home</a>
+                            <a href="#" class="dropdown-item">Contact</a>
+                            <a href="#" class="dropdown-item">About</a>
+                            
+                            <p class="dropdown-divider"></p>
+                            
+                            <div class="tile is-parent">
+                            <a role="button" class="button tile is-child is-warning is-outlined">Sing up</a>
+                                <div class="tile is-child"></div>
+                            <a role="button" class="button tile is-child is-dark is-outlined">Sing in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-end desktop">
+                <div class="navbar-item is-desktop">
+                    <div class="field has-addons navbar-end navbar-item is-desktop ">
+                        <p class="control">
+                            <input class="input is-rounded" type="text" placeholder="Search..." />
+                        </p>
+                        <p class="control">
+                                <button class="button is-rounded" ><i class="fa fa-search title is-6 has-text-danger"></i></button>
+                        </p>    
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="sidebar" class="columns">
+        <div class=" container">
+            <div class="column">
+                <div class="card" style="width: 250px; height: 50px; background-color: whitesmoke; margin-top: 30px; ">
+                        <p class="title is-4" id="txt">SPORTS <span> <i class="fa fa-football-ball"></i></span></p>
+                </div>
+            </div>
+            <div class="column">
+                    <div class="" style="width: 238px; height: 50px; background-color: whitesmoke; margin-top: -30px; ">
+                            <p class="title is-4" id="txt">MUSIC <span> <i class="fa fa-music"></i></span></p>
+                    </div>
+            </div>
+            <div class="column">
+                    <div class="" style="width: 238px; height: 50px; background-color: whitesmoke; margin-top: -30px; ">
+                            <p class="title is-4" id="txt">LIFESTYLE <span> <i class="fa fa-plane"></i></span></p>
+                    </div>
+            </div>
+            <div class="column">
+                    <div class="" style="width: 238px; height: 50px; background-color: whitesmoke; margin-top: -30px; ">
+                            <p class="title is-4" id="txt">COMEDY <span> <i class="fa fa-laugh"></i></span></p>
+                    </div>
+            </div>
+            <div class="column">
+                    <div class="" style="width: 238px; height: 50px; background-color: whitesmoke; margin-top: -30px; ">
+                            <p class="title is-4" id="txt">NEWS <span> <i class="fa fa-newspaper"></i></span></p>
+                    </div>
+            </div>
+            <div class="column">
+                    <div class="" style="width: 238px; height: 50px; background-color: whitesmoke; margin-top: -30px; ">
+                            <p class="title is-4" id="txt">TECHNOLOGY <span> <i class="fa fa-laptop-code"></i></span></p>
+                    </div>
+            </div>
+            <div id="sec-footer">
+                    <p>Settings <i class="fa fa-tools"></i></p>
+                    <p>Terms & Conditions <i class="fa fa-info-circle"></i></p>
+            </div>
+        </div>
+        
+    </section>
+    <section id="main">
+        <div class="columns is-multiline" style="margin-left: 270px; margin-right: 20px; margin-top: 10px;">
+            <div class="column is-one-quarter">
+                <div id="box" class="box">
+                    <div class="image is-128x128">
+                        <div class="play"><i class="fa fa-play-circle"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-one-quarter">
+                <div id="box" class="box">
+                    <div class="image is-128x128">
+                        <div class="play"><i class="fa fa-play-circle"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-one-quarter">
+                <div id="box" class="box">
+                    <div class="image is-128x128">
+                        <div class="play"><i class="fa fa-play-circle"></i></div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="column is-one-quarter">
+                <div id="box" class="box">
+                    <div class="image is-128x128">
+                        <div class="play"><i class="fa fa-play-circle"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-one-quarter">
+                    <div id="box" class="box">
+                        <div class="image is-128x128">
+                            <div class="play"><i class="fa fa-play-circle"></i></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="column is-one-quarter">
+                    <div id="box" class="box">
+                        <div class="image is-128x128">
+                            <div class="play"><i class="fa fa-play-circle"></i></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="column is-one-quarter">
+                    <div id="box" class="box">
+                        <div class="image is-128x128">
+                            <div class="play"><i class="fa fa-play-circle"></i></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="column is-one-quarter">
+                    <div id="box" class="box">
+                        <div class="image is-128x128">
+                            <div class="play"><i class="fa fa-play-circle"></i></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="title is-5 has-text-danger" style="text-align: center; cursor: pointer; margin-left: 250px;">view more <i class="fa fa-sync" style="font-size: 14px;"></i></div>
+    </section>
+</body>
+</html>
